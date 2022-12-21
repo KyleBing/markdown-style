@@ -99,10 +99,10 @@ $gap: 15px;
 
 @media (prefers-color-scheme: dark) {
     body{
-        background-color: $dark-bg-dark;
+        background-color: $dark-bg;
     }
     .markdown{
-        background-color: $dark-bg-dark;
+        background-color: $dark-bg;
         color: $dark-text;
         p{
         }
@@ -114,6 +114,9 @@ $gap: 15px;
 
         pre{
             background-color: $dark-bg-dark;
+            code{
+                background-color: $dark-bg-dark;
+            }
         }
         code{
             background-color: $dark-bg-dark;

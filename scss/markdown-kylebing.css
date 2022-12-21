@@ -210,11 +210,11 @@ tt {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #262626;
+    background-color: #333333;
   }
 
   .markdown {
-    background-color: #262626;
+    background-color: #333333;
     color: #b3b3b3;
   }
   .markdown img {
@@ -223,6 +223,9 @@ tt {
     background-color: #262626;
   }
   .markdown pre {
+    background-color: #262626;
+  }
+  .markdown pre code {
     background-color: #262626;
   }
   .markdown code {
