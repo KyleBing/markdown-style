@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+body {
+  font-family: "SF UI Display", "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input,
+textarea {
+  -webkit-appearance: none !important;
+}
+
+code,
+kbd,
+pre,
+samp,
+tt {
+  font-family: "Courier New", Courier, monospace;
+}
+
+:focus,
+:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+::-webkit-scrollbar {
+  z-index: 50;
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ddd;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+@font-face {
+  font-family: "JetBrainsMonoSimplify";
+  src: url("../font/JetBrainsMono-Regular.otf");
+}
+.unselectable, .btn-like {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-like {
+  cursor: pointer;
+}
+.btn-like:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+  .hide-in-mobile {
+    display: none;
+  }
+}
+.markdown {
+  background-color: white;
+  font-size: 14px;
+}
+.markdown p {
+  margin-bottom: 5px;
+}
+.markdown img {
+  border: 1px solid #E5E5EA;
+  max-width: 100%;
+  background-color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.markdown h1 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 26px;
+}
+.markdown h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.markdown h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+.markdown h4 {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+.markdown h5 {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+.markdown h6 {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+.markdown h7 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+.markdown pre {
+  margin-bottom: 15px;
+  font-size: 12px;
+  padding: 15px 20px;
+  background-color: #eee;
+}
+.markdown pre code {
+  padding: 0;
+  font-family: "JetBrainsMonoSimplify";
+  background-color: #eee;
+}
+.markdown code {
+  padding: 2px 5px;
+  font-family: "JetBrainsMonoSimplify";
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.markdown table {
+  margin-bottom: 15px;
+  border: 1px solid #E5E5EA;
+}
+.markdown table tr th {
+  text-align: left;
+  min-width: 50px;
+  padding: 3px 5px;
+  border: 1px solid #E5E5EA;
+  background-color: #eee;
+}
+.markdown table tr td {
+  text-align: left;
+  border: 1px solid #E5E5EA;
+  padding: 2px 3px;
+}
+.markdown ul {
+  margin-bottom: 15px;
+}
+.markdown ul li {
+  margin-left: 20px;
+  line-height: 1.5;
+  margin-bottom: 2px;
+}
+.markdown ol {
+  margin-bottom: 15px;
+}
+.markdown ol li {
+  margin-left: 20px;
+  line-height: 1.5;
+  margin-bottom: 2px;
+}
+.markdown blockquote {
+  border-left: 3px solid rgba(0, 0, 0, 0.2);
+  padding-left: 18px;
+}
+.markdown a {
+  color: #FF9500;
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #262626;
+  }
+
+  .markdown {
+    background-color: #262626;
+    color: #b3b3b3;
+  }
+  .markdown img {
+    border-color: #404040;
+    padding: 5px;
+    background-color: #262626;
+  }
+  .markdown pre {
+    background-color: #262626;
+  }
+  .markdown code {
+    background-color: #262626;
+  }
+  .markdown table {
+    border: 1px solid #404040;
+  }
+  .markdown table tr th {
+    border: 1px solid #404040;
+    background-color: #262626;
+  }
+  .markdown table tr td {
+    border: 1px solid #404040;
+  }
+  .markdown blockquote {
+    border-left: 3px solid #595959;
+  }
+  .markdown a {
+    color: #FF9500;
+  }
+}
+
+/*# sourceMappingURL=markdown-kylebing.css.map */
